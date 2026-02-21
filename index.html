@@ -1,44 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Gusta</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo | Dev Backend</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top Left -->
-  <div id="nome">GustaDev</div>
 
-  <!-- Top Right -->
-  <div id="portfolio-panel">
-    <h2>Meu Portfólio</h2>
-    <p>Mini Banco: <a href="https://gustadev9.github.io/mini-banco-js/">Clique aqui</a></p>
-    <p>Calculadora: <a href="https://gustadev9.github.io/calculadora/">Clique aqui</a></p>
-  </div>
+  <!-- HERO FULLSCREEN -->
+  <header class="hero-full">
+    <h1 class="hero-name">Gustavo</h1>
+    <h2 class="hero-role">Dev Backend</h2>
 
-  <!-- Bottom Left -->
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p> Eu me chamo Gustavo Samuel, tenho 17 anos, começei a estudar no começo de 2026, tenho base em frontend com HTML, CSS e JavaScript, mas meu foco é o backend (Node.js).</p>
+    <div class="scroll-indicator" onclick="scrollToContent()" aria-label="Scroll para conteúdo"></div>
+  </header>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="reveal">
+    <h3>Sobre mim</h3>
+    <p>
+      Me chamo Gustavo, tenho 17 anos e sou um entusiasta de tecnologia e programação. Atualmente, estou focado em desenvolvimento backend, explorando linguagem como Node.js. Sou apaixonado por resolver problemas complexos e criar soluções eficientes. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para me tornar um desenvolvedor cada vez melhor. Começei a estudar no começo de 2026 com algoritmos e lógica de programação, tenho base em frontend com HTML e CSS.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Node.js</li>
-    </ul>
+  <!-- PROJETOS -->
+  <section id="projetos" class="reveal">
+    <h3>Projetos</h3>
+
+    <div class="card reveal" data-delay="100">
+      <h4>Mini Banco</h4>
+      <p>Um site simples que simula operações bancárias básicas.</p>
+      <span>HTML • CSS • JavaScript</span>
+      <br>
+      <a href="https://github.com/GustaDev9/mini-banco-js" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card reveal" data-delay="200">
+      <h4>Calculadora</h4>
+      <p>Uma calculadora basica</p>
+      <span>HTML • CSS • JavaScript</span>
+      <br>
+      <a href="https://github.com/GustaDev9/calculadora" target="_blank">GitHub</a>
+    </div>
   </section>
 
-  <!-- Bottom Right -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>GitHub: <a href="https://github.com/GustaDev9">GustaDev9</a></p>
-    <p>Linkedin: <a href="https://www.linkedin.com/in/gustavo-samuel-26a5553b1">GustaDev</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/gusta.sl9/">@gusta.sl9</a></p>
+  <!-- FERRAMENTAS -->
+  <section id="experiencia" class="reveal">
+    <h3>Ferramentas</h3>
+
+    <div class="skills">
+      <div class="skill reveal" data-delay="100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <span>HTML</span>
+      </div>
+
+      <div class="skill reveal" data-delay="200">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <span>CSS</span>
+      </div>
+
+      <div class="skill reveal" data-delay="300">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="skill reveal" data-delay="400">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <span>Node.js</span>
+      </div>
+    </div>
   </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="reveal">
+    <h3>Contato</h3>
+
+    <div class="contacts">
+      <div class="contact-item reveal" data-delay="100" onclick="copiarEmail('')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email">
+        <span>Email</span>
+      </div>
+
+      <a class="contact-item reveal" data-delay="200" href="#" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+
+      <a class="contact-item reveal" data-delay="300" href="#" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- TOAST -->
+  <div id="toast">Email copiado!</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
