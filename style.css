@@ -272,3 +272,33 @@ html {
     font-size: 0.85rem;
   }
 }
+
+/* IMAGENS */
+
+#minibank {
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  width: 400px;
+  height: auto;   
+  margin-right: 500px;
+ border-radius: 50%; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+ filter: blur(4px);
+filter: brightness(120%);
+filter: contrast(150%)
+}
+
+#telcal {
+transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  width: 400px;
+  height: auto;   
+  margin-right: 500px;
+ border-radius: 50%; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+ filter: blur(4px);
+filter: brightness(120%);
+filter: contrast(150%)
+}
